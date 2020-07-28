@@ -1,0 +1,22 @@
+<resources>
+
+    <!--自定义基础主题-->
+    <style name="MyAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/myColorPrimary</item>                      <!--actionBar的颜色-->
+        <item name="colorPrimaryDark">@color/myColorPrimaryDark</item>              <!--通知栏颜色-->
+        <item name="colorAccent">@color/myColorAccent</item>                        <!--一般控件的选中效果默认采用该颜色-->
+        <item name="android:windowBackground">@color/activity_background</item>         <!--Activity背景色-->
+        <item name="android:navigationBarColor">@color/myColorPrimaryDark</item>        <!--底部导航栏颜色-->
+        <item name="android:colorButtonNormal">@color/myColorPrimaryDark</item>         <!--默认按钮的背景颜色-->
+        <item name="android:textColor">@color/colorFont_black</item>                    <!--Button，textView的文字颜色-->
+
+    </style>
+
+
+
+
+
+
+
+
+</resources>

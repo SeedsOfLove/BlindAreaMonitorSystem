@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+
+    //localBuildToolsVersion是gradle.properties中的数据
+    buildToolsVersion localBuildToolsVersion
+
+    defaultConfig {
+        applicationId "com.bluewater.blindareamonitorsystem"
+        minSdkVersion 22
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            res.srcDirs =
+                    [
+                            'src/main/res/layouts/function_test',
+                            'src/main/res/layouts/main',
+                            'src/main/res/layouts/welcome',
+                            'src/main/res/layouts',
+                            'src/main/res'
+                    ]
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //ToolUtils常用工具类合集
+    implementation 'com.github.SeedsOfLove:ToolUtils_SOL:1.0.3'
+    //ToastUtils吐司工具类
+    implementation 'com.github.SeedsOfLove:ToastUtils_SOL:1.0.3'
+    //PermissionX（Android运行时权限方案）
+    implementation 'com.permissionx.guolindev:permissionx:1.2.2'
+    //OkHttpUtils网络请求框架类
+    implementation 'com.github.SeedsOfLove:OkHttpUtils_SOL:1.0.0'
+}

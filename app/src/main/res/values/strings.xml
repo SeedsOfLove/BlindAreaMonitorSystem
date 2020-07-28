@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">盲区监控</string>
+
+    <!--    欢迎页     -->
+    <string name="guid_text_one_title">引&#8194;导&#8194;页&#8194;一&#8194;标&#8194;题</string>
+    <string name="guid_text_one_info">框&#8197;架&#8197;App&#8197;快&#8197;速&#8197;开&#8197;发</string>
+    <string name="guid_text_two_title">引&#8194;导&#8194;页&#8194;二&#8194;标&#8194;题</string>
+    <string name="guid_text_two_info">模&#8197;块&#8197;化&#8197;加&#8197;载&#8197;各&#8197;种&#8197;功&#8197;能&#8197;组&#8197;件</string>
+    <string name="guid_text_three_title">引&#8194;导&#8194;页&#8194;三&#8194;标&#8194;题</string>
+    <string name="guid_text_three_info">个&#8194;人&#8194;开&#8194;发&#8194;仅&#8194;供&#8194;参&#8194;考</string>
+
+
+</resources>

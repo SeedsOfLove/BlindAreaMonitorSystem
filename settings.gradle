@@ -1,0 +1,3 @@
+include ':ToastUtilsLib'
+include ':app'
+rootProject.name = "BlindAreaMonitorSystem"

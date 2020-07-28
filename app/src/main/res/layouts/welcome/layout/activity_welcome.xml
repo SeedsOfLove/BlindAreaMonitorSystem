@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--    背景    -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/activity_background"
+        android:weightSum="5">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@color/welcome_page_main" />
+
+    </LinearLayout>
+
+    <!--    文字显示    -->
+    <com.bluewater.base_app.welcome.MyInterceptViewPager
+        android:id="@+id/welcome_page_text_pager"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="60dp"
+        android:overScrollMode="never" />
+
+    <!--    图片显示    -->
+    <com.bluewater.base_app.welcome.MyInterceptViewPager
+        android:id="@+id/welcome_page_image_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/welcome_page_text_pager"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="120dp"
+        android:overScrollMode="never"/>
+
+    <!--    用于触摸的RelativeLayout     -->
+    <RelativeLayout
+        android:id="@+id/welcome_page_touch_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="120dp">
+
+    </RelativeLayout>
+
+    <!--    翻页指示器和2个按钮      -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingBottom="30dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_welcome_page_indicator_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/welcome_page_circle_main"
+                android:layout_marginRight="6dp" />
+
+            <ImageView
+                android:id="@+id/iv_welcome_page_indicator_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/welcome_page_circle_gray"
+                android:layout_marginRight="6dp"/>
+
+            <ImageView
+                android:id="@+id/iv_welcome_page_indicator_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/welcome_page_circle_gray"
+                android:layout_marginRight="6dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_welcome_page_login_register"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/welcome_page_shape_gradient_login"
+                android:gravity="center"
+                android:minEms="7"
+                android:text="登录/注册"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_welcome_page_use"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:background="@drawable/welcome_page_shape_color_next"
+                android:gravity="center"
+                android:minEms="7"
+                android:text="立即体验"
+                android:textColor="@color/welcome_page_main"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

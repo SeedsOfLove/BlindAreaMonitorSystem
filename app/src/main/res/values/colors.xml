@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    基础主题配色  -->
+    <color name="myColorPrimary">#EEAD0E</color>
+    <color name="myColorPrimaryDark">#CD8500</color>
+    <color name="myColorAccent">#1E90FF</color>
+
+    <!--    基础主题配色（夜晚）  -->
+    <color name="myColorPrimaryNight">#A0700E</color>
+    <color name="myColorPrimaryDarkNight">#774100</color>
+    <color name="myColorAccentNight">#1D468D</color>
+
+    <!--    Activity背景配色    -->
+    <color name="activity_background">#F2F2F2</color>
+
+    <!--    字体颜色    -->
+    <color name="colorFont_black">#373737</color>
+    <color name="colorFont_gray">#A9A9A9</color>
+
+    <!--    欢迎页    -->
+    <color name="welcome_page_main">@color/myColorPrimary</color>
+    <color name="welcome_page_gray">#C8C8C8</color>
+    <color name="welcome_page_main_deep">#EEFF8C00</color>
+
+    <!--    常规颜色    -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="orange">#FF7F00</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#00FF00</color>
+    <color name="blue">#0000FF</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="purple">#8B00FF</color>
+
+    <color name="color_pale_dark_orange">#FF8C00</color>
+
+</resources>
