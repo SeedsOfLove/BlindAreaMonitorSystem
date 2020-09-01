@@ -1,3 +1,5 @@
+include ':usbCameraCommon'
+include ':libuvccamera'
 include ':ToastUtilsLib'
 include ':app'
 rootProject.name = "BlindAreaMonitorSystem"

@@ -55,7 +55,7 @@ public class MyService extends AccessibilityService
                     if (count == 2)
                     {
                         desc = String.format("%s, 按键为音量增加键", desc);
-                        Intent intent = new Intent(BaseApplication.getContext(), MonitorActivity.class);
+                        Intent intent = new Intent(BaseApplication.getContext(), LogoActivity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK );
                         BaseApplication.getContext().startActivity(intent);
 

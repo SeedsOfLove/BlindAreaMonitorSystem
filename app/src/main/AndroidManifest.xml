@@ -25,9 +25,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/MyAppTheme">
-
+        <activity android:name="com.bluewater.business.monitor.CameraActivity"></activity>
         <activity
-            android:name="com.bluewater.business.monitor.MonitorActivity"
+            android:name="com.bluewater.business.monitor.LogoActivity"
             android:launchMode="singleTask"
             android:screenOrientation="landscape" />
         <activity
@@ -43,8 +43,7 @@
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.bluewater.business.main.MainActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="landscape">
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -83,14 +82,10 @@
                 <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
             </intent-filter>
         </receiver>
-
         <receiver
             android:name="com.bluewater.business.monitor.ScreenBroadcastReceiver"
             android:enabled="true"
-            android:exported="true">
-
-        </receiver>
-
+            android:exported="true"></receiver>
     </application>
 
 </manifest>
